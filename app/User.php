@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Traits\Friendable;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -42,6 +43,10 @@ class User extends Authenticatable
     public function likes()
     {
         return $this->hasMany(App\like::class);
+    }
+    public function getAvatarAttribute($avatar)
+    {
+       return asset(Storage::Url($avatar));
     }
 }
 

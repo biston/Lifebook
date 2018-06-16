@@ -1,9 +1,11 @@
 .facebook-bg{
     background-color: $navbar-bg;
 }
-.navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link {
+ .navbar-brand,.navbar-light .navbar-nav .nav-link {
     color:black!important;
 }
+
+
 .navbar-light .navbar-brand,.navbar-light .navbar-nav .nav-link.nav-link-text {
     color:white!important;
     font-weight: bolder;
@@ -12,7 +14,7 @@
 
 @media screen and (min-width: 766px) {
     .navbar{
-        height: 35px;
+        height: 45px;
      }
   }
 @media screen and (max-width: 766px) {
@@ -26,8 +28,8 @@
 }
 
 .nav-link{
-    height: 31px !important;
-    line-height: 15px;
+    height: 41px !important;
+    line-height: 25px;
 }
 .navbar .nav-link-text:hover{
     background: #3B5DA0;
@@ -37,8 +39,8 @@
 }
 
 .form-control-search{
-    width:350px !important;
-    height: 20px !important;
+    width:400px !important;
+    height: 25px !important;
     box-shadow: none !important;
     border-top-left-radius: 2px !important;
     border-bottom-left-radius: 2px !important;
@@ -46,11 +48,12 @@
     border-top-right-radius: 0px !important;
     border-right: 0px !important;
     padding-left: 4px !important;
-    font-size: .7rem;
+    font-size: .9rem;
+    font-weight: bold;
 }
 
 .btn-search{
-    height: 20px !important;
+    height: 25px !important;
     border-radius: 0px !important;
     vertical-align:2px !important;
     border:0px !important;

@@ -10415,7 +10415,7 @@ a.text-dark:focus {
   background-color: #4267B2;
 }
 
-.navbar-light .navbar-brand,
+.navbar-brand,
 .navbar-light .navbar-nav .nav-link {
   color: black !important;
 }
@@ -10428,7 +10428,7 @@ a.text-dark:focus {
 
 @media screen and (min-width: 766px) {
   .navbar {
-    height: 35px;
+    height: 45px;
   }
 }
 
@@ -10443,8 +10443,8 @@ a.text-dark:focus {
 }
 
 .nav-link {
-  height: 31px !important;
-  line-height: 15px;
+  height: 41px !important;
+  line-height: 25px;
 }
 
 .navbar .nav-link-text:hover {
@@ -10456,8 +10456,8 @@ a.text-dark:focus {
 }
 
 .form-control-search {
-  width: 350px !important;
-  height: 20px !important;
+  width: 400px !important;
+  height: 25px !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border-top-left-radius: 2px !important;
@@ -10466,11 +10466,12 @@ a.text-dark:focus {
   border-top-right-radius: 0px !important;
   border-right: 0px !important;
   padding-left: 4px !important;
-  font-size: .7rem;
+  font-size: .9rem;
+  font-weight: bold;
 }
 
 .btn-search {
-  height: 20px !important;
+  height: 25px !important;
   border-radius: 0px !important;
   vertical-align: 2px !important;
   border: 0px !important;
@@ -10490,5 +10491,44 @@ a.text-dark:focus {
 .profile {
   position: relative !important;
   margin-top: -2px !important;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img {
+  height: 300px;
+}
+
+.profile-link {
+  text-decoration: none;
+  font-size: 42px !important;
+  color: black;
+  border: 0px !important;
+  margin: 30px;
+}
+
+.profile-details {
+  border: 1px solid #DDD;
+}
+
+.profile-details p {
+  padding: 15px;
+  border-bottom: 1px solid #DDD;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.profile-details .profile-item {
+  font-size: 1rem;
+}
+
+.profile-details .profile-item .profile-item-label {
+  font-weight: bolder;
+}
+
+.profile-details .profile-title {
+  font-size: 1.8rem;
 }
 

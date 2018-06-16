@@ -31,9 +31,9 @@
                 @else
                 <li class="nav-item dropdown">
 
-                    <a id="navbarDropdown" class="nav-link nav-link-text dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    <a id="navbarDropdown" class="nav-link nav-link-text dropdown-toggle text-capitalize" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false" v-pre>
-                        <img src="https://fakeimg.pl/250x100/" class="avatar-sm rounded-circle  profile" width="20" height="20">
+                        <img src="{{Auth::user()->avatar}}" class="avatar-sm rounded-circle  profile" width="35" height="35">
                             {{ Auth::user()->name }} <span class="caret"></span>
                     </a>
 

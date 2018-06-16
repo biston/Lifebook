@@ -2,28 +2,15 @@
 
 use App\User;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
-
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/profile/edit',   'ProfileController@edit')->name('profile.edit');
-Route::put('/profile/update', 'ProfileController@update')->name('profile.update');
-Route::get('/profile/{user}', 'ProfileController@show')->name('profile.show');
+Route::get('/profiles/edit',   'ProfileController@edit')->name('ProfileController@edit');
+Route::put('/profiles/update', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+Route::get('/profiles/show/{user}', ['as' => 'profile.show', 'uses' => 'ProfileController@show']);
 
-Route::get('/test', function(){
+/* Route::get('/test', function(){
 
     $user1=User::find(1);
     $user2=User::find(2);
@@ -69,3 +56,4 @@ Route::get('/test5', function(){
     $user3=User::find(3);
     return $user2->has_pending_friend_request_from($user1);
 });
+ */

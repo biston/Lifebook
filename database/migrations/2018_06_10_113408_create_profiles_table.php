@@ -23,7 +23,10 @@ class CreateProfilesTable extends Migration
             $table->string('job_title')->nullable();
             $table->datetime('birth_date')->nullable();
             $table->string('location')->nullable();
-            $table->string('about')->nullable();
+            $table->string('facebook')->nullable();
+            $table->string('linked_in')->nullable();
+            $table->string('twitter')->nullable();
+            $table->longtext('about')->nullable();
             $table->timestamps();
         });
     }

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Profile;
 use Illuminate\Http\Request;
 
@@ -44,9 +45,9 @@ class ProfileController extends Controller
      * @param  \App\Profil  $profil
      * @return \Illuminate\Http\Response
      */
-    public function show(Profil $profil)
+    public function show(User $user)
     {
-        //
+        return view('profiles.show',compact('user'));
     }
 
     /**
