@@ -1,3 +1,1 @@
-<script>
-    @yield('extra-script')
-</script>
+ @stack('extra-js')

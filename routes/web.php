@@ -6,9 +6,14 @@ Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::get('/profiles/edit',   'ProfileController@edit')->name('ProfileController@edit');
-Route::put('/profiles/update', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
-Route::get('/profiles/show/{user}', ['as' => 'profile.show', 'uses' => 'ProfileController@show']);
+Route::group(['middleware'=>'auth'],function(){
+
+    Route::get('/profiles/edit', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
+    Route::put('/profiles/update', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+    Route::get('/profiles/show/{user}', ['as' => 'profile.show', 'uses' => 'ProfileController@show']);
+    Route::get('/profiles', ['as' => 'profile.index', 'uses' => 'ProfileController@index']);
+});
+
 
 /* Route::get('/test', function(){
 

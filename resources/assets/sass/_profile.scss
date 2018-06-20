@@ -15,6 +15,7 @@ $border-color:#DDD;
 
   .profile-details{
     border: 1px solid $border-color;
+    color: #365899;
     p{
       padding: 15px;
       border-bottom: 1px solid $border-color;
@@ -29,8 +30,15 @@ $border-color:#DDD;
         }
 
     }
-    .profile-title{
+    p.profile-title{
       font-size: 1.8rem;
+      color: white;
+      background: #365899;
+      margin:20px;
+      padding: 2px;
     }
-
+   }
+   .form-title{
+    border-bottom: 1px solid #BBB !important;
+    font-size:1.2rem;
   }

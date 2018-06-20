@@ -10443,8 +10443,14 @@ a.text-dark:focus {
 }
 
 .nav-link {
-  height: 41px !important;
-  line-height: 25px;
+  height: 35px !important;
+  line-height: 15px !important;
+}
+
+.nav-link img,
+.nav-link span {
+  position: relative;
+  top: -5px;
 }
 
 .navbar .nav-link-text:hover {
@@ -10511,6 +10517,7 @@ a.text-dark:focus {
 
 .profile-details {
   border: 1px solid #DDD;
+  color: #365899;
 }
 
 .profile-details p {
@@ -10528,7 +10535,37 @@ a.text-dark:focus {
   font-weight: bolder;
 }
 
-.profile-details .profile-title {
+.profile-details p.profile-title {
   font-size: 1.8rem;
+  color: white;
+  background: #365899;
+  margin: 20px;
+  padding: 2px;
+}
+
+.form-title {
+  border-bottom: 1px solid #BBB !important;
+  font-size: 1.2rem;
+}
+
+.form-control {
+  border-radius: 0px;
+  padding: 2px 4px !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 10pt;
+}
+
+input,
+select {
+  height: 30px !important;
+}
+
+label {
+  font-weight: bold;
+}
+
+.btn {
+  border-radius: 0px !important;
 }
 

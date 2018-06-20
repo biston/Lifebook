@@ -8,7 +8,12 @@
 <title>{{ config('app.name', 'Social network') }}</title>
 
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}" defer></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ <script src="{{ asset('js/app.js') }}" defer></script>
+
 
 <!-- Fonts -->
 <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -18,6 +23,8 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('lib/simple-line-icons/css/simple-line-icons.css') }}"  rel="stylesheet">
 <link href="{{ asset('lib/font-awesome-4.7.0/css/font-awesome.min.css') }}"  rel="stylesheet">
+
+  {{-- <!-- <script src="//{{ Request::getHost() }}:3000/socket.io/socket.io.js"></script>--> --}}
 
 
 <style>

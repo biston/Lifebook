@@ -33,8 +33,8 @@
 
                     <a id="navbarDropdown" class="nav-link nav-link-text dropdown-toggle text-capitalize" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false" v-pre>
-                        <img src="{{Auth::user()->avatar}}" class="avatar-sm rounded-circle  profile" width="35" height="35">
-                            {{ Auth::user()->name }} <span class="caret"></span>
+                        <img src="{{Auth::user()->avatar}}" class="avatar-sm rounded-circle  profile" width="32" height="32">
+                           <span>{{ Auth::user()->name }}</span>  <span class="caret"></span>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-text" href="#" title="Home">Home</i> </a>
+                    <a class="nav-link nav-link-text" href="#" title="Home">Accueil</i> </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#" title="Friends"><i class="fa fa-users" aria-hidden="true"></i> </a>

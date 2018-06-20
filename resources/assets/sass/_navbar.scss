@@ -28,8 +28,12 @@
 }
 
 .nav-link{
-    height: 41px !important;
-    line-height: 25px;
+    height: 35px !important;
+    line-height: 15px !important;
+    img,span{
+        position: relative;
+        top: -5px;
+    }
 }
 .navbar .nav-link-text:hover{
     background: #3B5DA0;

@@ -3,20 +3,11 @@
 
 <head>
     @include('layouts.partials.head')
+
 </head>
 
 <body>
-    <div id="app">
-        <div>
-           @include('layouts.partials.navbar')
-        </div>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-
-
-    </div>
+    @include('layouts.partials.content')
     @include('layouts.partials.scripts')
 </body>
 

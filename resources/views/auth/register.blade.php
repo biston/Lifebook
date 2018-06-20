@@ -14,7 +14,7 @@
                         <div class="form-group row">
                             <label for="gender" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-2">
                                     <select  id="gender"  class="form-control{{ $errors->has('gender') ? ' is-invalid' : '' }}" name="gender"  required autofocus>
                                     <option value="1">Male</option>
                                     <option value="0">Female</option>
