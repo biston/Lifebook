@@ -7,7 +7,7 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['middleware'=>'auth'],function(){
-
+    Route::get('/profiles/status/{user}', ['as' => 'profile.status', 'uses' => 'ProfileController@chech_status_with']);
     Route::get('/profiles/edit', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
     Route::put('/profiles/update', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
     Route::get('/profiles/show/{user}', ['as' => 'profile.show', 'uses' => 'ProfileController@show']);
@@ -15,7 +15,7 @@ Route::group(['middleware'=>'auth'],function(){
 });
 
 
-/* Route::get('/test', function(){
+ Route::get('/test', function(){
 
     $user1=User::find(1);
     $user2=User::find(2);
@@ -58,7 +58,7 @@ Route::get('/test5', function(){
 
     $user1=User::find(1);
     $user2=User::find(2);
-    $user3=User::find(3);
-    return $user2->has_pending_friend_request_from($user1);
+    $user6=User::find(6);
+    return $user1->check_status_with($user6);
 });
- */
+

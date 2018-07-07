@@ -1,18 +1,40 @@
+.css-form{
+    .form-control{
+        border-radius: 0px;
+        padding: 2px 4px !important;
+        box-shadow: none;
+        font-size: 10pt;
+        &:focus{
+            border: 1px solid $lifebook-bg;
+        }
+      }
 
-.form-control{
-    border-radius: 0px;
-    padding: 2px 4px !important;
-    box-shadow: none;
-    font-size: 10pt;
-  }
+    input,select{
+        height:40px !important;
+    }
 
-input,select{
-    height:30px !important;
-}
-
-label{
-    font-weight: bold;
-}
-.btn{
-    border-radius: 0px !important;
+    label{
+        font-weight: bold;
+    }
+    .btn{
+        border-radius: 0px !important;
+        background: $lifebook-bg !important;
+        color: white;
+        font-weight: bold;
+       &:hover{
+        background: $lifebook-hover-bg !important;
+       }
+    }
+    .form-title{
+        font-size:1.1rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+    }
+    hr.form-title{
+        width: 80px;
+        border-bottom: 4px solid $lifebook-bg !important;
+    }
+    textarea{
+    resize: none;
+    }
 }

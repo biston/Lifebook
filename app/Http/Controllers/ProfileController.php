@@ -144,4 +144,9 @@ class ProfileController extends Controller
     {
         //
     }
+
+    public function chech_status_with(User $user)
+    {
+        return Auth::user()->check_status_with($user);
+    }
 }

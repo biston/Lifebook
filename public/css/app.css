@@ -72,7 +72,7 @@ section {
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   color: #212529;
@@ -398,36 +398,36 @@ h6,
 
 h1,
 .h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h2,
 .h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h3,
 .h3 {
-  font-size: 1.4rem;
+  font-size: 1.75rem;
 }
 
 h4,
 .h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 h5,
 .h5 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 h6,
 .h6 {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .lead {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -499,7 +499,7 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .blockquote-footer {
@@ -2221,7 +2221,7 @@ pre code {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.6;
   color: #495057;
   background-color: #fff;
@@ -2282,7 +2282,7 @@ pre code {
 }
 
 select.form-control:not([size]):not([multiple]) {
-  height: calc(2.03rem + 2px);
+  height: calc(2.35rem + 2px);
 }
 
 select.form-control:focus::-ms-value {
@@ -2307,14 +2307,14 @@ select.form-control:focus::-ms-value {
 .col-form-label-lg {
   padding-top: calc(0.5rem + 1px);
   padding-bottom: calc(0.5rem + 1px);
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
 .col-form-label-sm {
   padding-top: calc(0.25rem + 1px);
   padding-bottom: calc(0.25rem + 1px);
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -2354,7 +2354,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-prepend > .btn,
 .input-group-sm > .input-group-append > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -2365,7 +2365,7 @@ select.form-control-sm:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-sm > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(1.55rem + 2px);
+  height: calc(1.8125rem + 2px);
 }
 
 .form-control-lg,
@@ -2375,7 +2375,7 @@ select.form-control-sm:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > .btn,
 .input-group-lg > .input-group-append > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -2386,7 +2386,7 @@ select.form-control-lg:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.input-group-text:not([size]):not([multiple]),
 .input-group-lg > .input-group-prepend > select.btn:not([size]):not([multiple]),
 .input-group-lg > .input-group-append > select.btn:not([size]):not([multiple]) {
-  height: calc(2.5rem + 2px);
+  height: calc(2.875rem + 2px);
 }
 
 .form-group {
@@ -2810,7 +2810,7 @@ select.form-control-lg:not([size]):not([multiple]),
           user-select: none;
   border: 1px solid transparent;
   padding: 0.375rem 0.75rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.6;
   border-radius: 0.25rem;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -3527,7 +3527,7 @@ fieldset:disabled a.btn {
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem;
 }
@@ -3535,7 +3535,7 @@ fieldset:disabled a.btn {
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
 }
@@ -3624,7 +3624,7 @@ input[type="button"].btn-block {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
@@ -3789,7 +3789,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap;
 }
@@ -4067,7 +4067,7 @@ input[type="button"].btn-block {
           align-items: center;
   padding: 0.375rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   color: #495057;
@@ -4227,7 +4227,7 @@ input[type="button"].btn-block {
 .custom-select {
   display: inline-block;
   width: 100%;
-  height: calc(2.03rem + 2px);
+  height: calc(2.35rem + 2px);
   padding: 0.375rem 1.75rem 0.375rem 0.75rem;
   line-height: 1.6;
   color: #495057;
@@ -4270,14 +4270,14 @@ input[type="button"].btn-block {
 }
 
 .custom-select-sm {
-  height: calc(1.55rem + 2px);
+  height: calc(1.8125rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 75%;
 }
 
 .custom-select-lg {
-  height: calc(2.5rem + 2px);
+  height: calc(2.875rem + 2px);
   padding-top: 0.375rem;
   padding-bottom: 0.375rem;
   font-size: 125%;
@@ -4287,7 +4287,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   width: 100%;
-  height: calc(2.03rem + 2px);
+  height: calc(2.35rem + 2px);
   margin-bottom: 0;
 }
 
@@ -4295,7 +4295,7 @@ input[type="button"].btn-block {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: calc(2.03rem + 2px);
+  height: calc(2.35rem + 2px);
   margin: 0;
   opacity: 0;
 }
@@ -4320,7 +4320,7 @@ input[type="button"].btn-block {
   right: 0;
   left: 0;
   z-index: 1;
-  height: calc(2.03rem + 2px);
+  height: calc(2.35rem + 2px);
   padding: 0.375rem 0.75rem;
   line-height: 1.6;
   color: #495057;
@@ -4336,7 +4336,7 @@ input[type="button"].btn-block {
   bottom: 0;
   z-index: 3;
   display: block;
-  height: 2.03rem;
+  height: 2.35rem;
   padding: 0.375rem 0.75rem;
   line-height: 1.6;
   color: #495057;
@@ -4592,10 +4592,10 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.34rem;
-  padding-bottom: 0.34rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   margin-right: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
@@ -4647,7 +4647,7 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
@@ -5440,7 +5440,7 @@ input[type="button"].btn-block {
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
 }
 
@@ -5456,7 +5456,7 @@ input[type="button"].btn-block {
 
 .pagination-sm .page-link {
   padding: 0.25rem 0.5rem;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   line-height: 1.5;
 }
 
@@ -5629,7 +5629,7 @@ input[type="button"].btn-block {
 }
 
 .alert-dismissible {
-  padding-right: 3.7rem;
+  padding-right: 4rem;
 }
 
 .alert-dismissible .close {
@@ -5778,7 +5778,7 @@ input[type="button"].btn-block {
   display: flex;
   height: 1rem;
   overflow: hidden;
-  font-size: 0.6rem;
+  font-size: 0.75rem;
   background-color: #e9ecef;
   border-radius: 0.25rem;
 }
@@ -6055,7 +6055,7 @@ input[type="button"].btn-block {
 
 .close {
   float: right;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 1;
   color: #000;
@@ -6280,7 +6280,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   opacity: 0;
 }
@@ -6405,7 +6405,7 @@ button.close {
   word-spacing: normal;
   white-space: normal;
   line-break: auto;
-  font-size: 0.7rem;
+  font-size: 0.875rem;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: padding-box;
@@ -6567,7 +6567,7 @@ button.close {
 .popover-header {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: inherit;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
@@ -10412,7 +10412,7 @@ a.text-dark:focus {
 }
 
 .facebook-bg {
-  background-color: #4267B2;
+  background-color: #14B1BB;
 }
 
 .navbar-brand,
@@ -10454,7 +10454,7 @@ a.text-dark:focus {
 }
 
 .navbar .nav-link-text:hover {
-  background: #3B5DA0;
+  background: #198C91;
 }
 
 .navbar .nav-link:hover {
@@ -10499,56 +10499,64 @@ a.text-dark:focus {
   margin-top: -2px !important;
 }
 
-.profile-card {
+.css-profile .profile-card {
   text-align: center;
 }
 
-.profile-card img {
+.css-profile .profile-card img {
   height: 300px;
 }
 
-.profile-link {
+.css-profile .profile-link {
   text-decoration: none;
-  font-size: 42px !important;
+  font-size: 20px !important;
   color: black;
   border: 0px !important;
-  margin: 30px;
+  margin: 10px;
 }
 
-.profile-details {
+.css-profile .profile-link:hover {
+  color: #14B1BB;
+}
+
+.css-profile .profile-details {
   border: 1px solid #DDD;
-  color: #365899;
+  color: #000;
 }
 
-.profile-details p {
+.css-profile .profile-details p {
   padding: 15px;
   border-bottom: 1px solid #DDD;
   margin-left: 80px;
   margin-right: 80px;
 }
 
-.profile-details .profile-item {
+.css-profile .profile-details .profile-item {
   font-size: 1rem;
 }
 
-.profile-details .profile-item .profile-item-label {
+.css-profile .profile-details .profile-item .profile-item-label {
   font-weight: bolder;
 }
 
-.profile-details p.profile-title {
+.css-profile .profile-details p.profile-title {
   font-size: 1.8rem;
   color: white;
-  background: #365899;
+  background: #14B1BB;
   margin: 20px;
   padding: 2px;
 }
 
-.form-title {
-  border-bottom: 1px solid #BBB !important;
-  font-size: 1.2rem;
+p.title {
+  color: #14B1BB;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 1px solid lightgray;
 }
 
-.form-control {
+.css-form .form-control {
   border-radius: 0px;
   padding: 2px 4px !important;
   -webkit-box-shadow: none;
@@ -10556,16 +10564,42 @@ a.text-dark:focus {
   font-size: 10pt;
 }
 
-input,
-select {
-  height: 30px !important;
+.css-form .form-control:focus {
+  border: 1px solid #14B1BB;
 }
 
-label {
+.css-form input,
+.css-form select {
+  height: 40px !important;
+}
+
+.css-form label {
   font-weight: bold;
 }
 
-.btn {
+.css-form .btn {
   border-radius: 0px !important;
+  background: #14B1BB !important;
+  color: white;
+  font-weight: bold;
+}
+
+.css-form .btn:hover {
+  background: #198C91 !important;
+}
+
+.css-form .form-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.css-form hr.form-title {
+  width: 80px;
+  border-bottom: 4px solid #14B1BB !important;
+}
+
+.css-form textarea {
+  resize: none;
 }
 

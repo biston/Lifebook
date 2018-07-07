@@ -54,11 +54,20 @@ trait Friendable{
             return 0;
         }
 
-
-        Friendship::whereRaw("(requested_id=$this->id AND requester_id=$user->id) OR
-                              (requester_id=$this->id AND requested_id=$user->id)")
-                  ->where('status',1)
+        Friendship::where(function($query) use ($user){
+                        $query->where('requested_id',$this->id)
+                              ->where('requester_id',$user->id);
+                         })
+                  ->orWhere(function($query) use ($user){
+                        $query->where('requester_id',$this->id)
+                              ->where('requested_id',$user->id);
+                        })
                   ->update(['status'=>0]);
+
+        // Friendship::whereRaw("(requested_id=$this->id AND requester_id=$user->id) OR
+        //                       (requester_id=$this->id AND requested_id=$user->id)")
+        //           ->where('status',1)
+        //           ->update(['status'=>0]);
 
         return 1;
     }
@@ -159,6 +168,21 @@ trait Friendable{
         });
 
         return $friend ? 1 : 0;
+
+    }
+
+    public function check_status_with(User $user)
+    {
+        if ($this->is_friend_with($user)==1)
+        {
+            return ['status'=>'Friend'];
+        }elseif ($this->has_pending_friend_request_from($user)==1) {
+            return ['status'=>'Pending_From'];
+        }elseif ($this->has_pending_friend_request_to($user)==1) {
+            return ['status'=>'Pending_To'];
+        }else{
+            return ['status'=>0];
+        }
 
     }
 }

@@ -1,21 +1,27 @@
 $border-color:#DDD;
-.profile-card {
+
+.css-profile{
+  .profile-card {
     text-align: center;
     img{
         height: 300px;
     }
   }
+
   .profile-link {
     text-decoration: none;
-    font-size: 42px !important;
+    font-size: 20px !important;
     color: black;
     border:0px !important;
-    margin: 30px;
+    margin: 10px;
+    &:hover{
+      color: $lifebook-bg;
+    }
   }
 
   .profile-details{
     border: 1px solid $border-color;
-    color: #365899;
+    color: #000;
     p{
       padding: 15px;
       border-bottom: 1px solid $border-color;
@@ -33,12 +39,17 @@ $border-color:#DDD;
     p.profile-title{
       font-size: 1.8rem;
       color: white;
-      background: #365899;
+      background:$lifebook-bg;
       margin:20px;
       padding: 2px;
     }
    }
-   .form-title{
-    border-bottom: 1px solid #BBB !important;
-    font-size:1.2rem;
-  }
+}
+p.title{
+  color: $lifebook-bg;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom:1px solid lightgray;
+}
