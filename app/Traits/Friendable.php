@@ -48,6 +48,19 @@ trait Friendable{
         return 1;
     }
 
+    public function refuse_friend (User $requester){
+
+        if($this->has_pending_friend_request_from($requester)==0){
+            return 0;
+        }
+
+        Friendship::where('requester_id',$requester->id)
+                  ->where('requested_id',$this->id)
+                  ->delete();
+
+        return 1;
+    }
+
     public function decline_friend (User $user){
 
         if($this->is_friend_with($user)==0){
@@ -62,7 +75,7 @@ trait Friendable{
                         $query->where('requester_id',$this->id)
                               ->where('requested_id',$user->id);
                         })
-                  ->update(['status'=>0]);
+                  ->delete();
 
         // Friendship::whereRaw("(requested_id=$this->id AND requester_id=$user->id) OR
         //                       (requester_id=$this->id AND requested_id=$user->id)")
@@ -78,10 +91,10 @@ trait Friendable{
              return 0;
          }
 
-          Friendship::where('requester_id',$this->id)
-                    ->where('requested_id',$requested->id)
-                    ->delete();
-          return 1;
+        Friendship::where('requester_id',$this->id)
+                ->where('requested_id',$requested->id)
+                ->delete();
+        return 1;
     }
 
 
@@ -175,13 +188,13 @@ trait Friendable{
     {
         if ($this->is_friend_with($user)==1)
         {
-            return ['status'=>'Friend'];
+            return ['status'=>'FRIENDS'];
         }elseif ($this->has_pending_friend_request_from($user)==1) {
-            return ['status'=>'Pending_From'];
+            return ['status'=>'PENDING_FROM'];
         }elseif ($this->has_pending_friend_request_to($user)==1) {
-            return ['status'=>'Pending_To'];
+            return ['status'=>'PENDING_TO'];
         }else{
-            return ['status'=>0];
+            return ['status'=>'UNKNOWN'];
         }
 
     }

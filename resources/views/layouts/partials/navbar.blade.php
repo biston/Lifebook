@@ -30,7 +30,6 @@
                 </li>
                 @else
                 <li class="nav-item dropdown">
-
                     <a id="navbarDropdown" class="nav-link nav-link-text dropdown-toggle text-capitalize" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false" v-pre>
                         <img src="{{Auth::user()->avatar}}" class="avatar-sm rounded-circle  profile" width="32" height="32">

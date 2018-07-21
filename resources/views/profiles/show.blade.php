@@ -4,9 +4,11 @@
   <div class="row  justify-content-center">
     <div class="profile-card col-md-6  px-0">
       <img src="{{$user->profile->profile_image}}" alt="John" style="width:100%">
-      <div class="row justify-content-center">
-        <friend-status :user="{{$user}}"/>
-      </div>
+      {{-- status vue component --}}
+      @if (Auth::id()!==$user->id)
+      <friend-status :user="{{$user}}"></friend-status>
+      @endif
+
       <a class="profile-link" href="{{$user->profile->twitter}}"><i class="fa fa-twitter "></i></a>
       <a class="profile-link" href="{{$user->profile->linked_in}}"><i class="fa fa-linkedin"></i></a>
       <a class="profile-link" href="{{$user->profile->facebook}}"><i class="fa fa-facebook"></i></a>

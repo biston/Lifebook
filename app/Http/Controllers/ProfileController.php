@@ -132,6 +132,8 @@ class ProfileController extends Controller
                 'profile_image'=> $request->profile_image->store('public/avatars')
             ]);
         }
+
+        return redirect()->route('profile.show',Auth::user());
     }
 
     /**

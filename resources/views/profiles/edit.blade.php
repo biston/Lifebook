@@ -151,7 +151,7 @@
                         </div>
 
                         <div class="form-group row justify-content-center mt-4 css-form">
-                            <div class="">
+                            <div>
                                 <button type="submit" class="btn px-4">
                                     <i class="fa fa-save mr-2"  aria-hidden="true"></i>Valider
                                 </button>

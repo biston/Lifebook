@@ -2,84 +2,70 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use App\Friendship;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class FriendshipController extends Controller
 {
+
     /**
-     * Display a listing of the resource.
+     * Undocumented function
      *
-     * @return \Illuminate\Http\Response
+     * @param User $user
+     * @return void
      */
-    public function index()
+    public function accept_friend(User $user)
     {
-        //
+        return Auth::user()->accept_friend($user);
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Undocumented function
      *
-     * @return \Illuminate\Http\Response
+     * @param User $user
+     * @return void
      */
-    public function create()
+    public function refuse_friend(User $user)
     {
-        //
+        return Auth::user()->refuse_friend($user);
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Undocumented function
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param User $user
+     * @return void
      */
-    public function store(Request $request)
+    public function add_friend(User $user)
     {
-        //
+       return Auth::user()->add_friend($user);
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Friendship  $friendship
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Friendship $friendship)
+  /**
+   * Undocumented function
+   *
+   * @param User $user
+   * @return void
+   */
+    public function decline_friend(User $user)
     {
-        //
+        return Auth::user()->decline_friend($user);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Friendship  $friendship
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Friendship $friendship)
+
+    public function cancel_request(User $user)
     {
-        //
+       return Auth::user()->cancel_request($user);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Friendship  $friendship
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Friendship $friendship)
-    {
-        //
-    }
+   /**
+    *
+    */
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Friendship  $friendship
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Friendship $friendship)
+    public function friends()
     {
-        //
+       return Auth::user()->friends();
     }
 }
